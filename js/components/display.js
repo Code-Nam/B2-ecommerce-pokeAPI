@@ -5,6 +5,7 @@ export const display = () => {
 	const pikachu = fetchAPI("https://pokeapi.co/api/v2/pokemon/pikachu");
 	const masterBall = fetchAPI("https://pokeapi.co/api/v2/item/master-ball");
 
+
 	//! Promise all to wait for all promises to be resolved before displaying the data
 	Promise.all([pikachu, masterBall])
 		.then((data) => {
@@ -16,7 +17,7 @@ export const display = () => {
           <p class="display-item__description">
             Discover your perfect Pokémon companion from our selection for sale! From classic favorites to rare finds, elevate your journey with diverse options. Catch yours today and embark on thrilling adventures!
           </p>
-          <a class="button">Discover now</a>
+          <a  href="pages/pokemon.html" class="button">Discover now</a>
           <img src="${pikachu.sprites.front_default}" class="display-item__img" alt="pikachu">
         </div>
         <div class="display-item">
@@ -25,10 +26,11 @@ export const display = () => {
           <p class="display-item__description">
             Pokémon enthusiasts, explore our curated collection featuring stylish Poké Ball accessories and cozy Pikachu plush toys. Enhance your collection with high-quality merchandise, perfect for Trainers and fans alike!          
           </p>
-          <a class="button">Shop now</a>
+          <a href="pages/item.html" class="button">Shop now</a>
           <img src="${masterBall.sprites.default}" class="display-item__img" alt="master ball">
         </div>
       `;
+
 		})
 		.catch((error) => console.error(error));
 };

@@ -1,0 +1,78 @@
+@import '../utils/mixins';
+@import '../base/typography';
+
+.pokemon-product{
+  &-wrapper{
+    display: grid;
+    place-items: center;
+  }
+  width: 50%;
+  @include flexbox(column, center, center);
+  border: 5px solid 	#c4bebb;
+  padding: 30px;
+  border-radius: 45px;
+  
+  &__img{
+    margin: 20px 0px;
+    border: 5px solid #272929;
+    border-radius: 15px;
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__description{
+    width: 100%;
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    &__name{
+      text-align: center;
+      display: inline;
+      font-size: $font-size-title;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.item-product{
+  display: grid;
+  place-items: center;
+  @include flexbox(column, center, center);
+  border: 5px solid 	#c4bebb;
+  padding: 30px;
+  border-radius: 45px;
+  
+  &__img{
+    margin: 20px 0px;
+    border: 5px solid #272929;
+    border-radius: 15px;
+
+    img{
+      width: 300px;
+      height: auto;
+    }
+  }
+
+  &__description{
+    width: 100%;
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    &__name{
+      text-align: center;
+      display: inline;
+      font-size: $font-size-title;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+  }
+  
+}
