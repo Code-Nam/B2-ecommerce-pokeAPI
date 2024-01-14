@@ -1,5 +1,6 @@
 import { toggleMenuBurger } from './utils/toggleMenuBurger.js';
-import { carousel } from './components/carousel.js';
+import { display } from './components/display.js';
+
 
 toggleMenuBurger();
-carousel();
+display();

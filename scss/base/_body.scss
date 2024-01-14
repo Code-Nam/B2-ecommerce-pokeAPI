@@ -1,5 +1,6 @@
 @import "typography";
 @import "../utils/variables";
+@import "../utils/mixins";
 
 body{
   padding: 0;
@@ -9,4 +10,5 @@ body{
   font-size: $font-size-base;
   color: $color-black;
   background-color: $color-white;
+  @include flexbox(column, center, center);
 }

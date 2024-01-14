@@ -1,5 +1,6 @@
 // base 
 @import 'base/_body.scss';
+@import 'base/_main.scss';
 @import 'base/_typography.scss';
 
 // utils
@@ -10,4 +11,5 @@
 @import 'components/_button.scss';
 
 // layout
+@import 'layout/_display.scss';
 @import 'layout/_navbar.scss';
