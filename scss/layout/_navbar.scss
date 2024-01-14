@@ -1,12 +1,10 @@
-@import '../utils/variables';
-@import '../utils/mixins';
-
-
 nav{ 
   @include flexbox(row, space-between, center);
   width: 90%;
   height: 80px;
   position: sticky;
+  top: 1px;
+  background-color: $color-white;
 }
 
 .logo{

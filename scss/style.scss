@@ -1,15 +1,21 @@
 // base 
-@import 'base/_body.scss';
-@import 'base/_main.scss';
-@import 'base/_typography.scss';
+@import 'base/_body';
+@import 'base/_main';
+@import 'base/_typography';
 
 // utils
-@import 'utils/_variables.scss';
-@import 'utils/_mixins.scss';
+@import 'utils/_keyframes';
+@import 'utils/_variables';
+@import 'utils/_mixins';
 
 // components
-@import 'components/_button.scss';
+@import 'components/_pokemonCard';
+@import 'components/_button';
 
 // layout
-@import 'layout/_display.scss';
-@import 'layout/_navbar.scss';
+@import 'layout/_display';
+@import 'layout/_navbar';
+@import 'layout/_slider';
+@import 'layout/_pokemonList';
+@import 'layout/_pokemonProduct';
+

@@ -27,7 +27,6 @@ export const toggleMenuBurger = () => {
 		let touchendY = event.touches[0].clientY;
 		let diffX = touchstartX - touchendX;
 		let diffY = touchstartY - touchendY;
-		console.log(diffX, diffY);
 		if (!touchendX || !touchendY) {
 			return;
 		}

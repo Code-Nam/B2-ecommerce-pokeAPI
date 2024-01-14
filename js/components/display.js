@@ -11,7 +11,7 @@ export const display = () => {
 			const [pikachu, masterBall] = data;
 			display.innerHTML = `
         <div class="display-item">
-          <p class="display-item__pretitle">Explore the possibilities</p>
+          <p class="display-item__pretitle">Explore the infinite possibilities</p>
           <h2 class="display-item__title">Pokemons</h2>
           <p class="display-item__description">
             Discover your perfect Pokémon companion from our selection for sale! From classic favorites to rare finds, elevate your journey with diverse options. Catch yours today and embark on thrilling adventures!

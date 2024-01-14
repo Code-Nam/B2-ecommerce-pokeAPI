@@ -1,3 +1,5 @@
+@import 'variables';
+
 @mixin flexbox($direction: row, $justify: flex-start, $align: stretch) {
   display: flex;
   flex-direction: $direction;
@@ -8,4 +10,8 @@
 @mixin shadow(){
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+@mixin white-gradient {
+	background: linear-gradient(to right, $color-white 0%,rgba(255,255,255,0) 100%);
 }
