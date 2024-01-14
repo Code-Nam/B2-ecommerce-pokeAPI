@@ -105,6 +105,24 @@ main {
   background-color: #e7bc09;
 }
 
+.checkout-items {
+  display: grid;
+  place-items: center;
+}
+.checkout-items .total {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 10px;
+}
+.checkout-items .checkout-button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #F7D02C;
+}
+.checkout-items .checkout-button:hover {
+  background-color: #e7bc09;
+}
+
 .display {
   width: 100%;
   height: 70vh;

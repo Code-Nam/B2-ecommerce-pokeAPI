@@ -16,10 +16,10 @@ export const addProduct = (buttonsCart, id) => {
 
 		const addedProduct = confirm(`Add ${pokemonName} to cart?`);
 
-		if (addedProduct) {
-			cart.push(pokemon);
-			localStorage.setItem("cart", JSON.stringify(cart));
-		}
+		if (!addedProduct) return;
+		alert("Item added to cart!");
+		cart.push(pokemon);
+		localStorage.setItem("cart", JSON.stringify(cart));
 	});
 };
 

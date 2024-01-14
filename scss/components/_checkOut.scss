@@ -1,0 +1,19 @@
+.checkout-items{
+  display: grid;
+  place-items: center;
+
+  .total{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10px;
+  }
+
+  .checkout-button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: $color-primary;
+    &:hover{
+      background-color: darken($color-primary, 10%);
+    }
+  }
+}
