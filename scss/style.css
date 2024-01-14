@@ -50,17 +50,46 @@ main {
 }
 
 .pokemon-card {
-  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-.pokemon-card a {
+.pokemon-card__link {
   text-decoration: none;
   color: #3B3939;
   font-weight: 700;
+  transition: all 0.2s ease-in-out;
+  margin: 10px;
+}
+.pokemon-card__link:hover {
+  color: #F7D02C;
 }
 .pokemon-card img {
   width: 250px;
   height: auto;
+}
+
+.item-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item-card img {
+  width: 250px;
+  height: auto;
+}
+.item-card__link {
+  text-decoration: none;
+  color: #3B3939;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+  margin: 10px;
+}
+.item-card__link:hover {
+  color: #F7D02C;
 }
 
 .button {
@@ -117,6 +146,9 @@ main {
 }
 .display .display-item:nth-child(2) .button {
   background-color: #67508f;
+}
+.display .display-item:nth-child(2) .button:hover {
+  background-color: #4f3e6e;
 }
 .display .display-item__pretitle {
   font-size: 1rem;
@@ -303,21 +335,13 @@ nav {
   gap: 20px;
 }
 
-.pokemon-card {
+.item-list {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-}
-.pokemon-card__link {
-  text-decoration: none;
-  color: #3B3939;
-  font-weight: 700;
-  transition: all 0.2s ease-in-out;
-  margin: 10px;
-}
-.pokemon-card__link:hover {
-  color: #F7D02C;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .pokemon-product {
@@ -393,4 +417,40 @@ nav {
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 20px;
+}
+
+.cart-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cart-item {
+  border: 1px solid red;
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: center;
+}
+.cart-item img {
+  width: 250px;
+  height: auto;
+}
+.cart-item p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.cart-item .remove-item {
+  font-size: 1.5rem;
+  background-color: #BF3131;
+  padding: 0.5rem 1rem;
+  color: #FFFAFA;
+  cursor: pointer;
+  transition: color 0.35s ease-in-out;
+}
+.cart-item .remove-item:hover {
+  color: #ffc7c7;
+  background-color: #7D0A0A;
 }/*# sourceMappingURL=style.css.map */

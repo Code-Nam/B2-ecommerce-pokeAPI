@@ -1,5 +1,6 @@
 import { addSingleProduct } from "../utils/addProduct.js";
 import { fetchAPI } from "../utils/pokeAPI.js";
+import { toggleMenuBurger } from "../utils/toggleMenuBurger.js";
 
 const pokemonProduct = () => {
 	const pokemonProduct = document.querySelector(".pokemon-product-wrapper");
@@ -51,4 +52,5 @@ const pokemonProduct = () => {
 	});
 };
 
+toggleMenuBurger();
 pokemonProduct();

@@ -11,7 +11,7 @@ export const cart = () => {
     cartItem.classList.add("cart-item");
     cartItem.innerHTML = `
       <img src="${item.img}" alt="${item.name}">
-      <p>${item.name}</p>
+      <p class="">${item.name}</p>
       <p>$ ${item.price}</p>
     `;
 

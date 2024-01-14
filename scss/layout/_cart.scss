@@ -1,0 +1,36 @@
+.cart-wrapper{
+  @include flexbox(row, space-between, center);
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cart-item{
+  border: 1px solid red;
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: center;
+
+  img{
+    width: 250px;
+    height: auto;
+  }
+
+  p{
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .remove-item{
+    font-size: 1.5rem;
+    background-color: #BF3131;
+    padding: 0.5rem 1rem;
+    color: $color-white;
+    cursor: pointer;
+    transition: color 0.35s ease-in-out;
+
+    &:hover{
+      color: darken($color-white, 10%);
+      background-color: #7D0A0A;
+    }
+  }
+}

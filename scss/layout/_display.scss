@@ -35,6 +35,10 @@
 			
 			.button {
 				background-color: #67508f;
+
+				&:hover {
+					background-color: darken(#67508f, 10%);
+				}
 			}
 		}
 		
